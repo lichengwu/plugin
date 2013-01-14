@@ -1,0 +1,16 @@
+{
+  "name": "StackOverFlow Review Tool",
+  "version": "1.0",
+  "description":
+    "Show review message when new first post appear.",
+  "icons": {"16": "icon.png", "48": "icon.png", "128": "icon.png"},
+  "permissions": ["tabs", "notifications","http://stackoverflow.com/*"],
+  "options_page": "options.html",
+  "background": { "scripts": ["background.js"] },
+  "manifest_version": 2,
+
+  // crbug.com/134315
+  "web_accessible_resources": [
+    "icon.png"
+  ]
+}
