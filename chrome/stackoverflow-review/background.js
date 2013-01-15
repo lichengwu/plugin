@@ -47,7 +47,7 @@ function fetch_review_info() {
         var reopen_vote = result[5].substring(result[5].lastIndexOf('=')+2,result[5].lastIndexOf('"'));
         // show notification
 
-        if(late_answer <= 0){
+        if(first_post <= 0){
           return;
         }
 
