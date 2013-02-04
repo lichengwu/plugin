@@ -1,12 +1,9 @@
-<!--
-  lichengwu <ol_l@msn.cn>
--->
-<!doctype html>
 <html>
   <head>
     <title>StackOverFlow Review Tool Settings</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script src="options.js"></script>
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/options.js"></script>
   </head>
   <body>
     <h1>
@@ -30,6 +27,16 @@
         <option>30</option>
       </select>
       minute(s).
+
+    <h2>Review Info</h2>
+    <div id='reviewPart'>
+        <label>First Posts:<input type="checkbox" name="part" value="1"></label>
+        <label>Late Answers:<input type="checkbox" name="part" value="2"></label>
+        <label>Close Votes:<input type="checkbox" name="part" value="3"></label>
+        <label>Suggested Edits:<input type="checkbox" name="part" value="4"></label>
+        <label>Low Quality Posts:<input type="checkbox" name="part" value="5"></label>
+        <label>Reopen Votes:<input type="checkbox" name="part" value="6"></label>
+    </div>
     </form>
   </body>
 </html>
